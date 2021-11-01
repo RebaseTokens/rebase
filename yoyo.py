@@ -23,26 +23,26 @@ def axie(sc):
     with open('/root/Desktop/rebase/axie.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, bitup, (s,))
+    s.enter(1, 1, upsh, (s,))
 
-def bitup(sc):
-    with open('/root/Desktop/rebase/bitup.json', 'r') as file :
+def upsh(sc):
+    with open('/root/Desktop/rebase/upsh.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/bitup.json', 'w') as file:
+    with open('/root/Desktop/rebase/upsh.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, blowup, (s,))
+    s.enter(1, 1, card, (s,))
 
-def blowup(sc):
-    with open('/root/Desktop/rebase/blowup.json', 'r') as file :
+def card(sc):
+    with open('/root/Desktop/rebase/card.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/blowup.json', 'w') as file:
+    with open('/root/Desktop/rebase/card.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, fbnb, (s,))
@@ -56,15 +56,15 @@ def fbnb(sc):
     with open('/root/Desktop/rebase/fbnb.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, flokg, (s,))
+    s.enter(1, 1, elon, (s,))
 
-def flokg(sc):
-    with open('/root/Desktop/rebase/flokg.json', 'r') as file :
+def elon(sc):
+    with open('/root/Desktop/rebase/elon.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/flokg.json', 'w') as file:
+    with open('/root/Desktop/rebase/elon.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, floki, (s,))
@@ -89,29 +89,19 @@ def fomobaby(sc):
     with open('/root/Desktop/rebase/fomobaby.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, greenm, (s,))
+    s.enter(1, 1, grezilla, (s,))
 
-def greenm(sc):
-    with open('/root/Desktop/rebase/greenm.json', 'r') as file :
+def grezilla(sc):
+    with open('/root/Desktop/rebase/grezilla.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/greenm.json', 'w') as file:
-      file.write(filedata)
-  
-    s.enter(1, 1, grv, (s,))
-
-def grv(sc):
-    with open('/root/Desktop/rebase/grv.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/grv.json', 'w') as file:
+    with open('/root/Desktop/rebase/grezilla.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, infx, (s,))
+
 
 def infx(sc):
     with open('/root/Desktop/rebase/infx.json', 'r') as file :
@@ -122,18 +112,8 @@ def infx(sc):
     with open('/root/Desktop/rebase/infx.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, lond, (s,))
-
-def lond(sc):
-    with open('/root/Desktop/rebase/lond.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/lond.json', 'w') as file:
-      file.write(filedata)
-  
     s.enter(1, 1, pulsar, (s,))
+
 
 def pulsar(sc):
     with open('/root/Desktop/rebase/pulsar.json', 'r') as file :
@@ -199,7 +179,20 @@ def wei(sc):
     with open('/root/Desktop/rebase/wei.json', 'w') as file:
       file.write(filedata)
   
+    s.enter(1, 1, risen, (s,))
+
+
+def risen(sc):
+    with open('/root/Desktop/rebase/risen.json', 'r') as file :
+      filedata = file.read()
+
+    filedata = filedata.replace('][', ',')
+
+    with open('/root/Desktop/rebase/risen.json', 'w') as file:
+      file.write(filedata)
+  
     s.enter(1, 1, commit, (s,))
+    
 
 def commit(sc):
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
