@@ -24,15 +24,15 @@ def axie(sc):
     with open('/root/Desktop/rebase/axie.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, upsh, (s,))
+    s.enter(1, 1, prince, (s,))
 
-def upsh(sc):
-    with open('/root/Desktop/rebase/upsh.json', 'r') as file :
+def prince(sc):
+    with open('/root/Desktop/rebase/prince.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/upsh.json', 'w') as file:
+    with open('/root/Desktop/rebase/prince.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, card, (s,))
@@ -168,17 +168,6 @@ def upcake(sc):
     filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/upcake.json', 'w') as file:
-      file.write(filedata)
-  
-    s.enter(1, 1, wei, (s,))
-
-def wei(sc):
-    with open('/root/Desktop/rebase/wei.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/wei.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, risen, (s,))
