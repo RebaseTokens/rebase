@@ -4,6 +4,7 @@ import sched, time
 
 s = sched.scheduler(time.time, time.sleep)
 def apollo(sc):
+    print('Start')
     with open('/root/Desktop/rebase/apollo.json', 'r') as file :
       filedata = file.read()
 
@@ -70,6 +71,7 @@ def elon(sc):
     s.enter(1, 1, floki, (s,))
 
 def floki(sc):
+    print('Half')
     with open('/root/Desktop/rebase/floki.json', 'r') as file :
       filedata = file.read()
 
@@ -195,6 +197,7 @@ def risen(sc):
     
 
 def commit(sc):
+    print('Commit')
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
   
     s.enter(300, 1, apollo, (s,))
