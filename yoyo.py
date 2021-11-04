@@ -197,7 +197,7 @@ def risen(sc):
 def commit(sc):
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
   
-    s.enter(1800, 1, apollo, (s,))
+    s.enter(300, 1, apollo, (s,))
     
 s.enter(1, 1, apollo, (s,))
 s.run()
