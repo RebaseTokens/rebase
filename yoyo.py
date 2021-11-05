@@ -6,10 +6,10 @@ s = sched.scheduler(time.time, time.sleep)
 def apollo(sc):
     print('Start')
     with open('/root/Desktop/rebase/apollo.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/apollo.json', 'w') as file:
       file.write(filedata)
@@ -18,10 +18,10 @@ def apollo(sc):
 
 def axie(sc):
     with open('/root/Desktop/rebase/axie.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
     
 
     with open('/root/Desktop/rebase/axie.json', 'w') as file:
@@ -31,10 +31,10 @@ def axie(sc):
 
 def prince(sc):
     with open('/root/Desktop/rebase/prince.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/prince.json', 'w') as file:
       file.write(filedata)
@@ -43,10 +43,10 @@ def prince(sc):
 
 def card(sc):
     with open('/root/Desktop/rebase/card.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/card.json', 'w') as file:
       file.write(filedata)
@@ -55,10 +55,10 @@ def card(sc):
 
 def fbnb(sc):
     with open('/root/Desktop/rebase/fbnb.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/fbnb.json', 'w') as file:
       file.write(filedata)
@@ -67,10 +67,10 @@ def fbnb(sc):
 
 def elon(sc):
     with open('/root/Desktop/rebase/elon.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/elon.json', 'w') as file:
       file.write(filedata)
@@ -80,10 +80,10 @@ def elon(sc):
 def floki(sc):
     print('Half')
     with open('/root/Desktop/rebase/floki.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/floki.json', 'w') as file:
       file.write(filedata)
@@ -92,10 +92,10 @@ def floki(sc):
 
 def fomobaby(sc):
     with open('/root/Desktop/rebase/fomobaby.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/fomobaby.json', 'w') as file:
       file.write(filedata)
@@ -104,10 +104,10 @@ def fomobaby(sc):
 
 def grezilla(sc):
     with open('/root/Desktop/rebase/grezilla.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/grezilla.json', 'w') as file:
       file.write(filedata)
@@ -117,10 +117,10 @@ def grezilla(sc):
 
 def infx(sc):
     with open('/root/Desktop/rebase/infx.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/infx.json', 'w') as file:
       file.write(filedata)
@@ -130,10 +130,10 @@ def infx(sc):
 
 def pulsar(sc):
     with open('/root/Desktop/rebase/pulsar.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/pulsar.json', 'w') as file:
       file.write(filedata)
@@ -142,10 +142,10 @@ def pulsar(sc):
 
 def shibn(sc):
     with open('/root/Desktop/rebase/shibn.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/shibn.json', 'w') as file:
       file.write(filedata)
@@ -154,10 +154,10 @@ def shibn(sc):
 
 def shibx(sc):
     with open('/root/Desktop/rebase/shibx.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/shibx.json', 'w') as file:
       file.write(filedata)
@@ -166,10 +166,10 @@ def shibx(sc):
 
 def squid(sc):
     with open('/root/Desktop/rebase/squid.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/squid.json', 'w') as file:
       file.write(filedata)
@@ -178,10 +178,10 @@ def squid(sc):
 
 def upcake(sc):
     with open('/root/Desktop/rebase/upcake.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/upcake.json', 'w') as file:
       file.write(filedata)
@@ -191,10 +191,10 @@ def upcake(sc):
 
 def risen(sc):
     with open('/root/Desktop/rebase/risen.json', 'r') as file :
-      filedata = file.read()[1:-1]
+      filedata = file.read()
 
-    filedata = filedata.replace(']', ',')
-    filedata = filedata.replace('[', '')
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
 
     with open('/root/Desktop/rebase/risen.json', 'w') as file:
       file.write(filedata)
