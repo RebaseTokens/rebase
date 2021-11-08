@@ -199,7 +199,7 @@ def risen(sc):
     with open('/root/Desktop/rebase/risen.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, commit, (s,))
+    s.enter(1, 1, uplink, (s,))
     
 
 def uplink(sc):
