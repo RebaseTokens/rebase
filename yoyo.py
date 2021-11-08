@@ -75,17 +75,17 @@ def elon(sc):
     with open('/root/Desktop/rebase/elon.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, floki, (s,))
+    s.enter(1, 1, huskyx, (s,))
 
-def floki(sc):
+def huskyx(sc):
     print('Half')
-    with open('/root/Desktop/rebase/floki.json', 'r') as file :
+    with open('/root/Desktop/rebase/huskyx.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/floki.json', 'w') as file:
+    with open('/root/Desktop/rebase/huskyx.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, fomobaby, (s,))
@@ -202,11 +202,24 @@ def risen(sc):
     s.enter(1, 1, commit, (s,))
     
 
+def uplink(sc):
+    with open('/root/Desktop/rebase/uplink.json', 'r') as file :
+      filedata = file.read()
+
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
+
+    with open('/root/Desktop/rebase/uplink.json', 'w') as file:
+      file.write(filedata)
+  
+    s.enter(1, 1, commit, (s,))
+    
+
 def commit(sc):
     print('Commit')
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
   
-    s.enter(5, 1, apollo, (s,))
+    s.enter(30, 1, apollo, (s,))
     
 s.enter(1, 1, apollo, (s,))
 s.run()
