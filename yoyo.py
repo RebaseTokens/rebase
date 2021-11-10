@@ -51,16 +51,16 @@ def card(sc):
     with open('/root/Desktop/rebase/card.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, fbnb, (s,))
+    s.enter(1, 1, flokx, (s,))
 
-def fbnb(sc):
-    with open('/root/Desktop/rebase/fbnb.json', 'r') as file :
+def flokx(sc):
+    with open('/root/Desktop/rebase/flokx.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/fbnb.json', 'w') as file:
+    with open('/root/Desktop/rebase/flokx.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, elon, (s,))
