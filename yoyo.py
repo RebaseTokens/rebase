@@ -174,16 +174,16 @@ def squid(sc):
     with open('/root/Desktop/rebase/squid.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, upcake, (s,))
+    s.enter(1, 1, zillam, (s,))
 
-def upcake(sc):
-    with open('/root/Desktop/rebase/upcake.json', 'r') as file :
+def zillam(sc):
+    with open('/root/Desktop/rebase/zillam.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/upcake.json', 'w') as file:
+    with open('/root/Desktop/rebase/zillam.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, risen, (s,))
