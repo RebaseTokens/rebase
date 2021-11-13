@@ -212,6 +212,32 @@ def uplink(sc):
     with open('/root/Desktop/rebase/uplink.json', 'w') as file:
       file.write(filedata)
   
+    s.enter(1, 1, gfloki, (s,))
+
+
+def gfloki(sc):
+    with open('/root/Desktop/rebase/gfloki.json', 'r') as file :
+      filedata = file.read()
+
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
+
+    with open('/root/Desktop/rebase/gfloki.json', 'w') as file:
+      file.write(filedata)
+  
+    s.enter(1, 1, uncle, (s,))
+
+
+def uncle(sc):
+    with open('/root/Desktop/rebase/uncle.json', 'r') as file :
+      filedata = file.read()
+
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
+
+    with open('/root/Desktop/rebase/uncle.json', 'w') as file:
+      file.write(filedata)
+  
     s.enter(1, 1, commit, (s,))
     
 
