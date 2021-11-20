@@ -186,17 +186,17 @@ def zillam(sc):
     with open('/root/Desktop/rebase/zillam.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, risen, (s,))
+    s.enter(1, 1, avaxup, (s,))
 
 
-def risen(sc):
-    with open('/root/Desktop/rebase/risen.json', 'r') as file :
+def avaxup(sc):
+    with open('/root/Desktop/rebase/avaxup.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/risen.json', 'w') as file:
+    with open('/root/Desktop/rebase/avaxup.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, uplink, (s,))
