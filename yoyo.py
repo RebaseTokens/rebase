@@ -233,7 +233,7 @@ def commit(sc):
     print('Commit')
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
   
-    s.enter(30, 1, apollo, (s,))
+    s.enter(30, 1, axie, (s,))
     
 s.enter(1, 1, axie, (s,))
 s.run()
