@@ -3,18 +3,6 @@ import subprocess
 import sched, time
 
 s = sched.scheduler(time.time, time.sleep)
-def apollo(sc):
-    print('Start')
-    with open('/root/Desktop/rebase/apollo.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace(']\n[', ',')
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/apollo.json', 'w') as file:
-      file.write(filedata)
-  
-    s.enter(1, 1, axie, (s,))
 
 def axie(sc):
     with open('/root/Desktop/rebase/axie.json', 'r') as file :
@@ -247,5 +235,5 @@ def commit(sc):
   
     s.enter(30, 1, apollo, (s,))
     
-s.enter(1, 1, apollo, (s,))
+s.enter(1, 1, axie, (s,))
 s.run()
