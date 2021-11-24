@@ -15,16 +15,16 @@ def axie(sc):
     with open('/root/Desktop/rebase/axie.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, prince, (s,))
+    s.enter(1, 1, mars, (s,))
 
-def prince(sc):
-    with open('/root/Desktop/rebase/prince.json', 'r') as file :
+def mars(sc):
+    with open('/root/Desktop/rebase/mars.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/prince.json', 'w') as file:
+    with open('/root/Desktop/rebase/mars.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, card, (s,))
