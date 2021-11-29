@@ -229,6 +229,19 @@ def uncle(sc):
     s.enter(1, 1, commit, (s,))
     
 
+def uncle(sc):
+    with open('/root/Desktop/rebase/pumpeth.json', 'r') as file :
+      filedata = file.read()
+
+    filedata = filedata.replace(']\n[', ',')
+    filedata = filedata.replace('][', ',')
+
+    with open('/root/Desktop/rebase/pumpeth.json', 'w') as file:
+      file.write(filedata)
+  
+    s.enter(1, 1, commit, (s,))
+    
+
 def commit(sc):
     print('Commit')
     subprocess.call(['/root/Desktop/rebase/autocommit.sh'])
