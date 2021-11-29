@@ -226,10 +226,10 @@ def uncle(sc):
     with open('/root/Desktop/rebase/uncle.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, commit, (s,))
+    s.enter(1, 1, pumpeth, (s,))
     
 
-def uncle(sc):
+def pumpeth(sc):
     with open('/root/Desktop/rebase/pumpeth.json', 'r') as file :
       filedata = file.read()
 
