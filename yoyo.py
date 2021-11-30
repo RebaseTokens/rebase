@@ -88,16 +88,16 @@ def fomobaby(sc):
     with open('/root/Desktop/rebase/fomobaby.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, grezilla, (s,))
+    s.enter(1, 1, prince, (s,))
 
-def grezilla(sc):
-    with open('/root/Desktop/rebase/grezilla.json', 'r') as file :
+def prince(sc):
+    with open('/root/Desktop/rebase/prince.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/grezilla.json', 'w') as file:
+    with open('/root/Desktop/rebase/prince.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, infx, (s,))
@@ -126,31 +126,9 @@ def pulsar(sc):
     with open('/root/Desktop/rebase/pulsar.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, shibn, (s,))
-
-def shibn(sc):
-    with open('/root/Desktop/rebase/shibn.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace(']\n[', ',')
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/shibn.json', 'w') as file:
-      file.write(filedata)
-  
-    s.enter(1, 1, shibx, (s,))
-
-def shibx(sc):
-    with open('/root/Desktop/rebase/shibx.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace(']\n[', ',')
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/shibx.json', 'w') as file:
-      file.write(filedata)
-  
     s.enter(1, 1, squid, (s,))
+
+
 
 def squid(sc):
     with open('/root/Desktop/rebase/squid.json', 'r') as file :
