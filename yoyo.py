@@ -27,16 +27,16 @@ def mars(sc):
     with open('/root/Desktop/rebase/mars.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, card, (s,))
+    s.enter(1, 1, chfx, (s,))
 
-def card(sc):
-    with open('/root/Desktop/rebase/card.json', 'r') as file :
+def chfx(sc):
+    with open('/root/Desktop/rebase/chfx.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/card.json', 'w') as file:
+    with open('/root/Desktop/rebase/chfx.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, flokx, (s,))
@@ -191,17 +191,17 @@ def gfloki(sc):
     with open('/root/Desktop/rebase/gfloki.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, uncle, (s,))
+    s.enter(1, 1, efinu, (s,))
 
 
-def uncle(sc):
-    with open('/root/Desktop/rebase/uncle.json', 'r') as file :
+def efinu(sc):
+    with open('/root/Desktop/rebase/efinu.json', 'r') as file :
       filedata = file.read()
 
     filedata = filedata.replace(']\n[', ',')
     filedata = filedata.replace('][', ',')
 
-    with open('/root/Desktop/rebase/uncle.json', 'w') as file:
+    with open('/root/Desktop/rebase/efinu.json', 'w') as file:
       file.write(filedata)
   
     s.enter(1, 1, pumpeth, (s,))
