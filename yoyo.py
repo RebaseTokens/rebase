@@ -204,19 +204,6 @@ def efinu(sc):
     with open('/root/Desktop/rebase/efinu.json', 'w') as file:
       file.write(filedata)
   
-    s.enter(1, 1, pumpeth, (s,))
-    
-
-def pumpeth(sc):
-    with open('/root/Desktop/rebase/pumpeth.json', 'r') as file :
-      filedata = file.read()
-
-    filedata = filedata.replace(']\n[', ',')
-    filedata = filedata.replace('][', ',')
-
-    with open('/root/Desktop/rebase/pumpeth.json', 'w') as file:
-      file.write(filedata)
-  
     s.enter(1, 1, commit, (s,))
     
 
